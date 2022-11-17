@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:elevation="0dp"
+       app:cardCornerRadius="0dp"
+       android:layout_margin="5dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal">
+
+
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:src="@mipmap/ic_launcher"
+           android:layout_gravity="center|left"
+           android:id="@+id/images"
+           android:layout_marginLeft="5dp"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+       android:orientation="vertical"
+           android:padding="10dp"
+           >
+
+           <TextView
+               android:id="@+id/title"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1.5"
+               android:ellipsize="end"
+               android:maxLines="1"
+               android:paddingLeft="5dp"
+               android:text="title"
+               android:textSize="14sp"
+                />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:text="description"
+               android:ellipsize="end"
+               android:maxLines="2"
+               android:paddingLeft="5dp"
+               android:id="@+id/des"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+
+                   android:paddingRight="5dp"
+                   android:textSize="10sp"
+                   android:textColor="@color/black"
+                   android:gravity="left|center"
+                   android:id="@+id/date"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text="Read More>"
+                   android:paddingRight="5dp"
+                   android:textSize="12sp"
+                   android:textColor="@color/blue"
+                   android:gravity="right|center"
+                   android:id="@+id/next"/>
+           </LinearLayout>
+
+
+
+
+
+       </LinearLayout>
+       </LinearLayout>
+   </androidx.cardview.widget.CardView>
+</layout>
